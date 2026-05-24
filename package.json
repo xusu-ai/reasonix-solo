@@ -21,8 +21,7 @@
     "dashboard/index.html",
     "dashboard/app.css",
     "dashboard/dist",
-    "README.md",
-    "LICENSE"
+    "README.md"
   ],
   "scripts": {
     "build": "tsup && node scripts/copy-dashboard-vendor-css.mjs && node scripts/copy-tree-sitter-grammars.mjs",
