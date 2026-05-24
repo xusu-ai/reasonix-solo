@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> | <a href="README.zh-CN.md">简体中文</a>
+  <a href="README.zh-CN.md">简体中文</a> | <a href="README.md">English</a>
 </p>
 
 ---
@@ -36,74 +36,38 @@
 
 ## 🚀 快速开始
 
-### 环境要求
-
-- **Node.js** 22.0.0 或更高版本
-- **npm** 10+
-
-### 安装
-
 ```bash
-git clone https://gitee.com/xusuai/reasonix-solo.git
+git clone https://github.com/xusu-ai/reasonix-solo.git
 cd reasonix-solo
 npm install
 npm run build
-```
-
-### 启动
-
-```bash
-# 启动 Web 服务（默认监听 9100 端口）
 node dist/cli/index.js serve --port 9100 --hostname 0.0.0.0
-
-# 打开浏览器访问 http://服务器IP:9100
-# 一个页面，直接开始 AI 编程
-```
-
-### Docker 用户
-
-```bash
-docker run -d \
-  --name reasonix-solo \
-  -p 9100:9100 \
-  -v /path/to/projects:/workspace \
-  xusuai/reasonix-solo
+# 浏览器访问 http://服务器IP:9100
 ```
 
 ---
 
 ## 🌐 单网页 WebUI 功能
 
-Reasonix-Solo 把所有功能集中在一个页面：
+所有功能集中在一个页面：
 
 - 💬 **AI 对话编程** — 左侧对话，右侧代码实时预览
-- 📝 **文件编辑器** — 内嵌代码编辑器，直接修改服务器文件
-- 🔄 **流式输出** — AI 思考过程和代码生成实时可见
-- 📂 **项目文件树** — 浏览和管理服务器上的项目文件
-- ⚙️ **一键配置** — 模型、API Key、Provider 在线管理
-- 📊 **缓存监控** — DeepSeek prompt cache 命中率实时显示
+- 📝 **内嵌编辑器** — 直接修改服务器文件
+- 🔄 **流式输出** — AI 思考过程实时可见
+- 📂 **文件树** — 浏览管理服务器项目文件
+- ⚙️ **一键配置** — 模型、API Key 在线管理
 
 ---
 
-## 🏗️ 为什么选择 Reasonix-Solo
+## 🏗️ 与传统方案对比
 
 | 对比项 | 传统方案 | Reasonix-Solo |
 |--------|---------|---------------|
-| 安装 | 本地 IDE + 插件 + 运行时 | **一个 Node.js 搞定** |
-| 远程编程 | 需要 SSH/VSCode Remote | **浏览器访问即可** |
+| 安装 | 本地 IDE + 插件 | **一个 Node.js 搞定** |
+| 远程编程 | SSH/VSCode Remote | **浏览器访问即可** |
 | 客户端 | 每台机器都要装 | **零安装，有浏览器就行** |
 | CPU 要求 | 可能需要 AVX/GPU | **老旧 CPU 也流畅** |
 | 界面 | 复杂多窗口 | **单网页，清爽简洁** |
-
----
-
-## 🔧 系统要求
-
-最低配置：
-- CPU：任何支持 Node.js 22 的处理器（Intel Core 2 Duo 起）
-- 内存：512MB（推荐 1GB）
-- 磁盘：200MB
-- 系统：Linux / macOS / Windows
 
 ---
 
@@ -114,5 +78,5 @@ MIT License。详见 [LICENSE](LICENSE)。
 ---
 
 <p align="center">
-  <a href="https://gitee.com/xusuai/reasonix-solo">Gitee 仓库</a>
+  <a href="https://github.com/xusu-ai/reasonix-solo">GitHub 仓库</a>
 </p>
